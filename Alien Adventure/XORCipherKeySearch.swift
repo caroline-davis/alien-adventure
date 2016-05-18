@@ -20,24 +20,22 @@ extension Hero {
         
         for x in UInt8.min..<UInt8.max {
             
-            print(x)
-            
             var decrypted: [UInt8]
             decrypted = [UInt8]()
             
             for character in encryptedString {
-                // ADD CODE: perform decryption
-                print(character)
+                decrypted.append(character ^ x)
             }
             
             if let decryptedString = String(bytes: decrypted,
                 encoding: NSUTF8StringEncoding) where decryptedString == "udacity" {
+                    key = x
                     // ADD CODE: found match, now what?
             }
+
         }
-        
         return key
     }
-}
 
+}
 // If you have completed this function and it is working correctly, feel free to skip this part of the adventure by opening the "Under the Hood" folder, and making the following change in Settings.swift: "static var RequestsToSkip = 3"
