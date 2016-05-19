@@ -8,6 +8,11 @@
 
 extension Hero {
     
+// Iterates through inventory and finds all items whose planet origin matches
+// the planet parameter. The item whose planet matches the parameter that
+// is the oldest is then returned.
+
+    
     func oldestItemFromPlanet(inventory: [UDItem], planet: String) -> UDItem? {
         if inventory.isEmpty {
             return nil
@@ -37,11 +42,6 @@ extension Hero {
         }
     }
 }
-//find oldest item from planet Cunia
-//Iterate through the inventory and find all items whose planet of origin matches the planet parameter. Use the historicalData property of UDItem and the key “PlanetOfOrigin”.
-//For the items whose planet of origin matches the planet parameter, determine which item is the oldest. Use the historicalData property of UDItem and the key “CarbonAge”.
-
-
 
 
 // If you have completed this function and it is working correctly, feel free to skip this part of the adventure by opening the "Under the Hood" folder, and making the following change in Settings.swift: "static var RequestsToSkip = 2"

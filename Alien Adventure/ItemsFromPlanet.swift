@@ -8,13 +8,13 @@
 
 extension Hero {
     
-// Looks in UDItem for all values that match the planet parameter
-// For all items it finds its appends them to itemsFound
+// Looks in UDItem for all values that match the planet parameter.
+// For all items it finds, its appends them to itemsFound.
     
     func itemsFromPlanet(inventory: [UDItem], planet: String) -> [UDItem] {
         var itemsFound = [UDItem]()
         for item in inventory {
-            if let itemsFromPlanet = item.historicalData["PlanetOfOrigin"]{
+            if let itemsFromPlanet = item.historicalData["PlanetOfOrigin"] {
                 if planet == itemsFromPlanet as? String {
                     itemsFound.append(item)
                 }
