@@ -11,7 +11,6 @@ extension Hero {
 // Iterates through inventory and finds all items whose planet origin matches
 // the planet parameter. The item whose planet matches the parameter that
 // is the oldest is then returned.
-
     
     func oldestItemFromPlanet(inventory: [UDItem], planet: String) -> UDItem? {
         if inventory.isEmpty {

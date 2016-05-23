@@ -42,9 +42,4 @@ extension Hero {
 }
 
 
-/* This method should perform the following tasks:
-Create a dictionary that keeps a count of how many items in the inventory are Common, Uncommon, Rare, and Legendary.
-For each item in the inventory, determine its rarity and then add one to the running count for that rarity.
-*/
-
 // If you have completed this function and it is working correctly, feel free to skip this part of the adventure by opening the "Under the Hood" folder, and making the following change in Settings.swift: "static var RequestsToSkip = 4"

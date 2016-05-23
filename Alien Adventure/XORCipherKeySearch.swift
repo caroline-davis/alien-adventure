@@ -10,7 +10,8 @@ import Foundation
 
 extension Hero {
     
-// 
+// Iterates through encrypted string and appends decrypted characters to
+// decrypted string using the XOR method and the x key.
     
     func xorCipherKeySearch(encryptedString: [UInt8]) -> UInt8 {
         

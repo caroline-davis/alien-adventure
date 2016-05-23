@@ -26,8 +26,7 @@ extension Hero {
                         if name.rangeOfString("Laser") != nil && carbonAge < 30 {
                             itemsWithoutLaser.append(itemID)
                         }
-                    }
-             
+                    }             
                 }
             }
         }
