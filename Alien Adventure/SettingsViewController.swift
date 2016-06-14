@@ -59,14 +59,19 @@ class SettingsViewController: UIViewController {
     // MARK: Implementing Actions
     
     func switchLevel(segmentControl: UISegmentedControl) {
-    //    Settings.Common.Level
+        Settings.Common.Level = segmentControl.selectedSegmentIndex
         
         print("level control has changed!")
     }
     
     func showBadges(switchControl: UISwitch) {
-   //     Settings.Common.Showbadges
-        
+        if Settings.Common.ShowBadges != true {
+            Settings.Common.ShowBadges = true
+            switchControl.setOn(true, animated: true)
+        } else {
+            Settings.Common.ShowBadges = false
+            switchControl.setOn(false, animated: true)
+        }
         print("show badges switch has changed!")
     }
     
