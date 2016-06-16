@@ -8,7 +8,8 @@
 
 
 extension UDGameSM {
-    
+
+// Adds either a Magenta or Blue badge when task is complete
 
     func addBadge(hero: Hero, alien: Alien) {
         

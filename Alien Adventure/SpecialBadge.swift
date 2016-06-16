@@ -10,6 +10,8 @@ import SpriteKit
 
 class SpecialBadge: Badge {
     
+// If alien is teal then a random animation on a teal badge occurs
+    
     override init(requestType: UDRequestType) {
         super.init(requestType: requestType)
         self.texture = SKTexture(imageNamed: "BadgeTeal")

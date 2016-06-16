@@ -9,6 +9,8 @@
 import SpriteKit
 
 class Badge: SKSpriteNode {
+    
+// Allows magenta badges to be seen when robot completes task
 
     var requestType: UDRequestType
     
