@@ -8,8 +8,14 @@
 
 extension Hero {
     
+// Uses the overloaded function of the < sign with the UDItem type used in ItemComparison
+// It then sorts the list in ascending order
+    
     func sortLeastToGreatest(inventory: [UDItem]) -> [UDItem] {
-        return [UDItem]()
+        var orderedList = inventory.sort({
+           $0<$1
+        })
+        return orderedList
     }
     
 }
