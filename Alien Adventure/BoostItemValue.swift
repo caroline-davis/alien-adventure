@@ -9,8 +9,17 @@
 extension Hero {
     
     func boostItemValue(inventory: [UDItem]) -> [UDItem] {
-        return [UDItem]()
+        let list = inventory.map({(var item:UDItem) -> UDItem in
+            item.baseValue += 100
+            return item
+    })
+        return list
     }
 }
 
+
 // If you have completed this function and it is working correctly, feel free to skip this part of the adventure by opening the "Under the Hood" folder, and making the following change in Settings.swift: "static var RequestsToSkip = 4"
+
+
+// inventory.map(){(item:UDItem) -> UDItem in
+// item.baseValue += 100
