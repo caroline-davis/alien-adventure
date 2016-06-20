@@ -8,13 +8,14 @@
 
 extension Hero {
     
-// This method should take the inventory parameter and remove all of the items that do not have a Common rarity.
+// This method should take the inventory parameter and remove all of 
+// the items that do not have a Common rarity.
     
     func getCommonItems(inventory: [UDItem]) -> [UDItem] {
         let onlyCommonList = inventory.filter({(var item:UDItem) -> Bool in
             return item.rarity.rawValue < 1
         })
-    return onlyCommonList
+        return onlyCommonList
     }
 }
 
